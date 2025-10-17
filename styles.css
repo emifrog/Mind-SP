@@ -444,26 +444,26 @@ body {
 }
 
 .feature-icon {
-    width: 70px;
-    height: 70px;
-    background: linear-gradient(135deg, #0b57d0 0%, #00385F 100%);
+    width: 80px;
+    height: 80px;
+    background: #347ef5;
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
     margin-bottom: 1.5rem;
     transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .feature-icon svg {
-    width: 35px;
-    height: 35px;
+    width: 64px;
+    height: 64px;
 }
 
 .feature-card:hover .feature-icon {
-    transform: scale(1.1) rotate(5deg);
-    box-shadow: 0 10px 25px rgba(11, 87, 208, 0.3);
+    transform: scale(1.1) rotate(3deg);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
 .feature-number {
@@ -600,9 +600,20 @@ body {
     transform: scale(1.05);
 }
 
-.app-badge img {
-    height: 50px;
+.app-badge-appel img.badge-img,
+.app-badge-play img.badge-img {
+    height: 60px;
+    width: 200px;
+    object-fit: contain;
     border-radius: 8px;
+    /*box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.app-badge-appel:hover img.badge-img,
+.app-badge-play:hover img.badge-img {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Footer */
