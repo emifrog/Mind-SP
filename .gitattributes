@@ -1,0 +1,9 @@
+# Normalise les fins de ligne en LF dans le dépôt, quel que soit l'OS de travail.
+# Sans ça, chaque aller-retour Windows/Unix produit des diffs entiers de CRLF.
+* text=auto eol=lf
+
+# Binaires : jamais de conversion
+*.png binary
+*.jpg binary
+*.webp binary
+*.ico binary

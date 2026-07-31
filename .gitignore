@@ -1,0 +1,19 @@
+# Système
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+*~
+
+# Dépendances et build, si le projet en acquiert un jour
+node_modules/
+dist/
+.cache/
+
+# Sauvegardes git locales
+*.bundle

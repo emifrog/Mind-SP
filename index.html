@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MindSP — La plateforme de gestion des SDIS</title>
+<meta name="description" content="MindSP — la plateforme SaaS de gestion opérationnelle pour les Services Départementaux d'Incendie et de Secours (SDIS).">
+<link rel="canonical" href="https://mindsp.fr/">
+<meta name="theme-color" content="#0B1524">
+<meta name="color-scheme" content="dark">
+
+<!-- Icônes -->
+<link rel="icon" href="images/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<!-- Partage social -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="MindSP">
+<meta property="og:url" content="https://mindsp.fr/">
+<meta property="og:title" content="MindSP — La plateforme de gestion des SDIS">
+<meta property="og:description" content="FMPA, formations, personnel, temps de travail additionnel, agenda et messagerie — centralisés, sécurisés et accessibles partout.">
+<meta property="og:image" content="https://mindsp.fr/images/og-cover.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="MindSP — Toute la gestion de votre SDIS, sur une seule plateforme.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MindSP — La plateforme de gestion des SDIS">
+<meta name="twitter:description" content="FMPA, formations, personnel, temps de travail additionnel, agenda et messagerie — centralisés, sécurisés et accessibles partout.">
+<meta name="twitter:image" content="https://mindsp.fr/images/og-cover.jpg">
+<meta name="twitter:image:alt" content="MindSP — Toute la gestion de votre SDIS, sur une seule plateforme.">
+
+<link rel="stylesheet" href="style.css">
+<!-- Marque la page comme scriptée avant le premier rendu : sans JS, les blocs
+     .reveal restent visibles au lieu de se figer en opacity:0. -->
+<script>document.documentElement.className += " js";</script>
+<script src="main.js" defer></script>
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html" aria-label="MindSP accueil">
+      <img class="mark" src="images/logo-mark.png" width="30" height="30" alt="" aria-hidden="true">
+      <span class="wordmark">Mind<b>SP</b></span>
+    </a>
+    <nav class="nav-links" aria-label="Principale">
+      <a href="#modules">Fonctionnalités</a>
+      <a href="#produit">Aperçu</a>
+      <a href="#assistant">Assistant IA</a>
+      <a href="#securite">Sécurité</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="nav-login" href="https://mindsp.vercel.app/">Se connecter</a>
+      <a class="btn btn-red" href="#demo">Demander une démo</a>
+      <button class="nav-toggle" type="button" id="nav-toggle"
+              aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">
+        <span class="nav-burger" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Menu mobile : reprend les liens masqués sous 860 px -->
+  <nav class="nav-panel" id="nav-menu" aria-labelledby="nav-toggle" data-open="false">
+    <a href="#modules">Fonctionnalités</a>
+    <a href="#produit">Aperçu</a>
+    <a href="#assistant">Assistant IA</a>
+    <a href="#securite">Sécurité</a>
+    <a href="https://mindsp.vercel.app/">Se connecter</a>
+    <a class="btn btn-red" href="#demo">Demander une démo</a>
+  </nav>
+</header>
+
+<!-- ══ HERO ══ -->
+<section class="hero band-dark" id="top">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="status"><span class="dot" aria-hidden="true"></span> Plateforme opérationnelle · SDIS</span>
+      <h1>Toute la gestion de votre SDIS,<br><span class="hl">sur une seule plateforme.</span></h1>
+      <p class="lede">FMPA, formations, personnel, temps de travail additionnel, agenda et messagerie — centralisés, sécurisés et accessibles partout, sur mobile comme au centre de secours.</p>
+      <div class="hero-cta">
+        <a class="btn btn-red" href="#demo">Demander une démo
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="#modules">Explorer les fonctionnalités</a>
+      </div>
+      <div class="hero-trust">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Multi-tenant par SDIS</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Assistant IA intégré</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Conçu pour le service public</span>
+      </div>
+    </div>
+
+    <!-- Maquette produit -->
+    <div class="mock reveal" role="img" aria-label="Aperçu du tableau de bord MindSP">
+      <div class="mock-bar"><i></i><i></i><i></i><span class="u">mindsp.fr / tableau-de-bord</span></div>
+      <div class="mock-body">
+        <div class="mock-side">
+          <svg class="si on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+          <svg class="si" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3c1.5 3 4.5 4.2 4.5 7.8A4.5 4.5 0 0 1 7.5 10.8C7.5 8.5 9 7 9.5 5.5c1 1 1.5 2 1.5 3 0-1.8.5-3.8 1-5.5Z"/></svg>
+          <svg class="si" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          <svg class="si" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg>
+          <svg class="si" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        </div>
+        <div class="mock-main">
+          <div class="mock-h">Bonjour, Capitaine</div>
+          <div class="mock-sub">Aperçu de votre SDIS 06 — Alpes-Maritimes</div>
+          <div class="kpis">
+            <div class="kpi red"><div class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c1.5 3 4.5 4.2 4.5 7.8A4.5 4.5 0 0 1 7.5 10.8C7.5 8.5 9 7 9.5 5.5c1 1 1.5 2 1.5 3 0-1.8.5-3.8 1-5.5Z"/></svg></div><div class="n">12</div><div class="l">FMPA à venir</div></div>
+            <div class="kpi navy"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div><div class="n">148</div><div class="l">Agents actifs</div></div>
+            <div class="kpi amber"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></div><div class="n">6</div><div class="l">Alertes</div></div>
+            <div class="kpi green"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div><div class="n">5</div><div class="l">Formations</div></div>
+          </div>
+          <div class="mock-row"><div class="t">Prochain FMPA — Manœuvre secours routier</div><div class="d">Sam. 12 juil. · 08:30 · CS Grasse · 14 inscrits</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ STATS ══ -->
+<section class="band-dark">
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat"><div class="n"><b>12</b> modules</div><div class="l">Un outil unique pour toute l'activité</div></div>
+      <div class="stat"><div class="n">100% web</div><div class="l">Aucune installation · mobile & desktop</div></div>
+      <div class="stat"><div class="n">Multi-<b>SDIS</b></div><div class="l">Isolation stricte des données par tenant</div></div>
+      <div class="stat"><div class="n">24/7</div><div class="l">Notifications & messagerie temps réel</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PREUVE HUMAINE ══ -->
+<section class="human band-dark">
+  <div class="wrap">
+    <div class="in">
+      <span class="hbar" aria-hidden="true"></span>
+      <p>MindSP a été conçu à partir de <b>l'expérience quotidienne</b> des services d'incendie et de secours.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ MODULES ══ -->
+<section class="band-light pad" id="modules">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Les fonctionnalités</span>
+      <h2>Chaque métier du SDIS, dans un seul environnement.</h2>
+      <p>Fini les tableurs éparpillés et les logiciels qui ne se parlent pas. MindSP réunit la gestion opérationnelle, RH et administrative des sapeurs-pompiers.</p>
+    </div>
+    <div class="mods">
+      <div class="mod flame">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3c1.5 3 4.5 4.2 4.5 7.8A4.5 4.5 0 0 1 7.5 10.8C7.5 8.5 9 7 9.5 5.5c1 1 1.5 2 1.5 3 0-1.8.5-3.8 1-5.5Z"/></svg></div>
+        <h3>FMPA</h3>
+        <p>Formations, manœuvres et présences actives : planification, inscriptions, émargement par QR code et suivi des taux de participation.</p>
+      </div>
+      <div class="mod">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+        <h3>Formations</h3>
+        <p>Catalogue, inscriptions et workflow de validation. Suivi des qualifications, recyclages et attestations pour chaque agent.</p>
+      </div>
+      <div class="mod">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+        <h3>Personnel</h3>
+        <p>Fiches individuelles, aptitudes médicales, qualifications et EPI. Alertes automatiques avant chaque échéance d'expiration.</p>
+      </div>
+      <div class="mod">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div>
+        <h3>Temps de travail (TTA)</h3>
+        <p>Saisie des heures, calcul des indemnités et export SEPA prêt pour la banque — coordonnées bancaires validées, zéro erreur de paie.</p>
+      </div>
+      <div class="mod">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+        <h3>Agenda</h3>
+        <p>Gardes, réunions et événements récurrents. Invitations, réponses des participants et rappels automatiques.</p>
+      </div>
+      <div class="mod">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <h3>Messagerie & Chat</h3>
+        <p>Canaux d'équipe, messages directs et présence en temps réel. Diffusion fiable, notifications push et mode hors-ligne.</p>
+      </div>
+      <div class="mod">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.7-.9L9.6 3.9A2 2 0 0 0 7.9 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"/></svg></div>
+        <h3>Documents & Portails</h3>
+        <p>Bibliothèque documentaire avec droits par rôle, portails thématiques et actualités internes diffusées au bon public.</p>
+      </div>
+      <div class="mod">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+        <h3>Tâches</h3>
+        <p>Attribution, priorités et échéances. Chaque agent voit ce qu'il a à faire ; les responsables suivent l'avancement d'un coup d'œil.</p>
+      </div>
+      <div class="mod flame">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M12 8V5M8 3h8"/><circle cx="9" cy="14" r="1"/><circle cx="15" cy="14" r="1"/></svg></div>
+        <h3>Assistant IA — Ed</h3>
+        <p>Un copilote qui répond en langage naturel à partir de vos données réelles : « Quels FMPA cette semaine ? », « Qui a une qualification qui expire ? »</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SHOWCASE PRODUIT ══ -->
+<section class="band-navy pad" id="produit">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Le produit en images</span>
+      <h2>Voyez à quoi ressemble le quotidien avec MindSP.</h2>
+      <p>Une interface claire, pensée pour aller à l'essentiel — au centre de secours comme sur le terrain.</p>
+    </div>
+    <div class="showcase">
+      <div class="shot reveal">
+        <div class="frame"><div class="bar"><i></i><i></i><i></i><span class="u">mindsp.fr / tableau-de-bord</span></div><picture><source type="image/webp" srcset="images/shot-dashboard-700.webp 700w, images/shot-dashboard-1300.webp 1300w" sizes="(max-width: 820px) calc(100vw - 48px), (max-width: 1160px) calc((100vw - 74px) / 2), 543px"><img src="images/shot-dashboard.jpg" width="1300" height="840" loading="lazy" decoding="async" alt="Tableau de bord MindSP : indicateurs FMPA, effectifs, suggestions IA et alertes"></picture></div>
+        <div class="cap"><span class="n">Le tableau de bord</span><p>Tout l'essentiel de votre SDIS en un coup d'œil dès la connexion : FMPA, effectifs, alertes et suggestions.</p></div>
+      </div>
+      <div class="shot reveal">
+        <div class="frame"><div class="bar"><i></i><i></i><i></i><span class="u">mindsp.fr / personnel</span></div><picture><source type="image/webp" srcset="images/shot-personnel-700.webp 700w, images/shot-personnel-1300.webp 1300w" sizes="(max-width: 820px) calc(100vw - 48px), (max-width: 1160px) calc((100vw - 74px) / 2), 543px"><img src="images/shot-personnel.jpg" width="1300" height="840" loading="lazy" decoding="async" alt="Fiche d'un agent : aptitude médicale, qualifications et équipements"></picture></div>
+        <div class="cap"><span class="n">Une vue consolidée des aptitudes et qualifications</span><p>Aptitude médicale, qualifications et équipements d'un agent — réunis sur une seule fiche.</p></div>
+      </div>
+      <div class="shot reveal">
+        <div class="frame"><div class="bar"><i></i><i></i><i></i><span class="u">mindsp.fr / fmpa</span></div><picture><source type="image/webp" srcset="images/shot-fmpa-700.webp 700w, images/shot-fmpa-1300.webp 1300w" sizes="(max-width: 820px) calc(100vw - 48px), (max-width: 1160px) calc((100vw - 74px) / 2), 543px"><img src="images/shot-fmpa.jpg" width="1300" height="840" loading="lazy" decoding="async" alt="Détail d'une FMPA avec la liste des participants inscrits et l'émargement"></picture></div>
+        <div class="cap"><span class="n">Une inscription FMPA réalisable en quelques secondes</span><p>Vos agents s'inscrivent en un clic ; vous suivez les effectifs et l'émargement en temps réel.</p></div>
+      </div>
+      <div class="shot reveal">
+        <div class="frame"><div class="bar"><i></i><i></i><i></i><span class="u">mindsp.fr / personnel</span></div><picture><source type="image/webp" srcset="images/shot-alertes-700.webp 700w, images/shot-alertes-1300.webp 1300w" sizes="(max-width: 820px) calc(100vw - 48px), (max-width: 1160px) calc((100vw - 74px) / 2), 543px"><img src="images/shot-alertes.jpg" width="1300" height="840" loading="lazy" decoding="async" alt="Alertes d'expiration des aptitudes médicales et qualifications"></picture></div>
+        <div class="cap"><span class="n">Des alertes avant les échéances critiques</span><p>MindSP vous prévient avant l'expiration d'une aptitude ou d'une qualification — plus de mauvaise surprise.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ AI SPOTLIGHT ══ -->
+<section class="band-navy pad" id="assistant">
+  <div class="wrap ai-grid">
+    <div>
+      <span class="eyebrow" style="color:var(--red)">Assistant intégré</span>
+      <h2 style="font-size:clamp(28px,4.4vw,40px);margin-top:14px">Posez la question.<br>Ed interroge vos données.</h2>
+      <p style="margin-top:16px;color:var(--sky-mut);font-size:17px;line-height:1.6">Pas de tableau croisé, pas d'export. Ed comprend votre agenda, votre personnel, vos FMPA et vos formations — et répond en clair, avec le lien vers la ressource.</p>
+      <ul class="ai-feat">
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Branché sur vos vraies données</b> — agenda, personnel, FMPA, TTA, formations.</span></li>
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Respecte les droits</b> — chaque utilisateur ne voit que ce qu'il est autorisé à voir.</span></li>
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Suggestions proactives</b> — qualifications qui expirent, effectifs insuffisants, tâches en retard.</span></li>
+      </ul>
+    </div>
+
+    <div class="chat reveal">
+      <div class="chat-h">
+        <span class="av" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M12 8V5M8 3h8"/><circle cx="9" cy="14" r="1"/><circle cx="15" cy="14" r="1"/></svg></span>
+        <div><div class="nm">Ed — Assistant IA</div><div class="st">● En ligne</div></div>
+      </div>
+      <div class="chat-b">
+        <div class="bub me">Quels sont mes événements d'agenda cette semaine ?</div>
+        <div class="bub ai">Tu as <b>4 événements</b> cette semaine :
+          <span class="ev">• Mer. — Formation SAP · Recyclage · Valbonne</span>
+          <span class="ev">• Jeu. — Garde 24 h · Équipe B · CS Cannes</span>
+          <span class="ev">• Ven. — Entretien véhicules VSAV · Atelier dép.</span>
+          <span class="ev">• Sam. — FMPA Secours routier · CS Grasse</span>
+        </div>
+        <div class="bub me">Rappelle-moi qui n'a pas encore répondu.</div>
+      </div>
+      <div class="chat-in">
+        <div class="f">Posez votre question…</div>
+        <div class="s" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SÉCURITÉ ══ -->
+<section class="band-dark pad" id="securite">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Sécurité & conformité</span>
+      <h2>Conçu pour les exigences du service public.</h2>
+      <p>Les données des sapeurs-pompiers sont sensibles. MindSP applique une sécurité stricte à chaque couche, du navigateur à la base de données.</p>
+    </div>
+    <div class="sec-grid">
+      <div class="sec-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg></div>
+        <h3>Isolation multi-tenant</h3>
+        <p>Chaque SDIS a ses données strictement cloisonnées (Row-Level Security). Aucun accès croisé possible entre organisations.</p>
+      </div>
+      <div class="sec-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+        <h3>Rôles & permissions</h3>
+        <p>Hiérarchie de droits Utilisateur → Manager → Admin. Chacun n'accède qu'aux actions et données de son périmètre.</p>
+      </div>
+      <div class="sec-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h3>Protection à chaque requête</h3>
+        <p>Anti-CSRF, limitation de débit, en-têtes HSTS/CSP et révocation de session. Aucune injection possible, contenus assainis.</p>
+      </div>
+      <div class="sec-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg></div>
+        <h3>Journal d'audit</h3>
+        <p>Les actions sensibles (exports, validations, accès) sont tracées et horodatées pour la traçabilité et le contrôle.</p>
+      </div>
+      <div class="sec-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20"/></svg></div>
+        <h3>Hébergement européen</h3>
+        <p>Données hébergées dans l'UE sur infrastructure managée, dans une logique de conformité RGPD.</p>
+      </div>
+      <div class="sec-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+        <h3>Fiabilité mesurée</h3>
+        <p>Supervision des erreurs, sauvegardes et tests automatisés du cœur métier — le socle est vérifié, pas supposé.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA FINAL ══ -->
+<section class="band-navy pad" id="demo">
+  <div class="wrap">
+    <div class="cta-final">
+      <h2>Prêt à moderniser la gestion de votre SDIS ?</h2>
+      <p>Réservez une démonstration : on vous montre MindSP sur vos cas d'usage, en 30 minutes.</p>
+      <div class="hero-cta">
+        <a class="btn btn-red" href="mailto:contact@mindsp.fr?subject=Demande%20de%20démo%20MindSP">Demander une démo</a>
+        <a class="btn btn-ghost" href="#modules">Revoir les fonctionnalités</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="col about">
+        <a class="brand" href="#top">
+          <img class="mark" src="images/logo-mark.png" width="30" height="30" alt="" aria-hidden="true">
+          <span class="wordmark">Mind<b>SP</b></span>
+        </a>
+        <p>La plateforme SaaS de gestion opérationnelle pour les Services Départementaux d'Incendie et de Secours.</p>
+      </div>
+      <div class="col">
+        <h4>Produit</h4>
+        <a href="#modules">Fonctionnalités</a>
+        <a href="#assistant">Assistant IA</a>
+        <a href="#securite">Sécurité</a>
+        <a href="#demo">Démo</a>
+      </div>
+      <div class="col">
+        <h4>Modules</h4>
+        <a href="#modules">FMPA</a>
+        <a href="#modules">Personnel & TTA</a>
+        <a href="#modules">Agenda & Messagerie</a>
+        <a href="#modules">Documents</a>
+      </div>
+      <div class="col">
+        <h4>Légal &amp; Contact</h4>
+        <a href="#">Mentions légales</a>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">Accessibilité</a>
+        <a href="mailto:contact@mindsp.fr">Contact</a>
+      </div>
+    </div>
+    <div class="wrap foot-bottom" style="padding-left:0;padding-right:0">
+      <span>© 2026 MindSP — Tous droits réservés.</span>
+      <span>Mentions légales · Politique de confidentialité · Accessibilité · RGPD</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ══ RETOUR EN HAUT ══ -->
+<button class="to-top" type="button" data-visible="false" aria-label="Revenir en haut de la page">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+</body>
+</html>
