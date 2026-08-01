@@ -1,7 +1,7 @@
 # MindSP — Landing page
 
-Page de présentation de **MindSP**, plateforme SaaS de gestion opérationnelle pour les
-Services Départementaux d'Incendie et de Secours (SDIS).
+Page de présentation de **MindSP**, plateforme SaaS de gestion RH, formation et temps de
+travail pour les Services Départementaux d'Incendie et de Secours (SDIS).
 
 Site statique : aucune dépendance, aucune étape de build.
 

@@ -1,7 +1,7 @@
 {
   "name": "MindSP — La plateforme de gestion des SDIS",
   "short_name": "MindSP",
-  "description": "La plateforme SaaS de gestion opérationnelle pour les Services Départementaux d'Incendie et de Secours.",
+  "description": "La plateforme SaaS de gestion administrative et RH pour les Services Départementaux d'Incendie et de Secours.",
   "lang": "fr",
   "dir": "ltr",
   "start_url": "./",
